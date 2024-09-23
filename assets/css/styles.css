@@ -545,8 +545,12 @@ body.dark-theme {
 }
 
 .projects_subtitle {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
+  font-size: var(--small-font-size); /* Maintain a readable font size */
+  color: var(--text-color-light); /* Use a light color to differentiate from the title */
+  margin-top: 0.5rem; /* Add some space above the subtitle */
+  margin-bottom: 1rem; /* Add spacing below the subtitle */
+  text-align: center; /* Center the subtitle to match the overall design */
+  line-height: 1.4; /* Improve readability with proper line spacing */
 }
 
 .projects_title {
