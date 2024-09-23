@@ -537,7 +537,9 @@ body.dark-theme {
 }
 
 .projects_img {
-  width: 250px;
+  width: 250px; /* Set a fixed width */
+  height: 150px; /* Set a fixed height to maintain uniformity */
+  object-fit: cover; /* Ensures the image covers the set area without distortion */
   border-radius: 0.75rem;
   margin-bottom: 1.25rem;
 }
@@ -549,8 +551,9 @@ body.dark-theme {
 
 .projects_title {
   font-size: var(--h2-font-size);
-  margin-bottom: 1.25rem;
   margin: 0.5rem 0 1.25rem;
+  max-width: 250px; /* Set the same width as the image */
+  margin: 0 auto; /* Center the title within the container */
 }
 
 .projects_button {
